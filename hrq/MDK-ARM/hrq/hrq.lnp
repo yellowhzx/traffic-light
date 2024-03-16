@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"hrq\startup_stm32f103xb.o"
+"hrq\main.o"
+"hrq\gpio.o"
+"hrq\tim.o"
+"hrq\stm32f1xx_it.o"
+"hrq\stm32f1xx_hal_msp.o"
+"hrq\stm32f1xx_hal_gpio_ex.o"
+"hrq\stm32f1xx_hal_tim.o"
+"hrq\stm32f1xx_hal_tim_ex.o"
+"hrq\stm32f1xx_hal.o"
+"hrq\stm32f1xx_hal_rcc.o"
+"hrq\stm32f1xx_hal_rcc_ex.o"
+"hrq\stm32f1xx_hal_gpio.o"
+"hrq\stm32f1xx_hal_dma.o"
+"hrq\stm32f1xx_hal_cortex.o"
+"hrq\stm32f1xx_hal_pwr.o"
+"hrq\stm32f1xx_hal_flash.o"
+"hrq\stm32f1xx_hal_flash_ex.o"
+"hrq\stm32f1xx_hal_exti.o"
+"hrq\system_stm32f1xx.o"
+"hrq\oled.o"
+--strict --scatter "hrq\hrq.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hrq.map" -o hrq\hrq.axf
